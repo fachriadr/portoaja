@@ -17,7 +17,7 @@ function App() {
             setiap pengalaman menawarkan pelajaran berharga, dan saya bersemangat untuk terus berkembang dalam tim yang progresif.
           </p>
           <div className="flex items-center sm:gap-4 gap-2">
-            <a href="/assets/CV_Fachri Adryansyah.pdf" download="CV_Fachri Adryansyah.pdf" className="bg violet-700 p-4 rounded-2xl hover:bg-violet-600">
+            <a href="/public/assets/CV_Fachri Adryansyah.pdf" download="CV_Fachri Adryansyah.pdf" className="bg violet-700 p-4 rounded-2xl hover:bg-violet-600">
               Download CV <i className="ri-download-line ri-lg"></i>
             </a>
             <a href="#proyek" className="bg zinc-700 p-4 rounded-2xl hover:bg-zinc-600">
