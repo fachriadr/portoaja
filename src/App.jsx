@@ -4,7 +4,7 @@ import { listTools, listProyek } from './data';
 function App() {
   const handleDownload = () => {
     const link = document.getElementById('download-pdf');
-    link.href = '/public/CV.pdf';
+    link.href = './public/CV.pdf';
     link.setAttribute('download', 'CV.pdf');
   };
   return (
