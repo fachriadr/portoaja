@@ -2,6 +2,11 @@ import DataImage from './data';
 import { listTools, listProyek } from './data';
 
 function App() {
+  const handleDownload = () => {
+    const link = document.getElementById('download-pdf');
+    link.href = '/public/CV.pdf';
+    link.setAttribute('download', 'CV.pdf');
+  };
   return (
     <>
       <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grip-cols-1">
@@ -17,8 +22,8 @@ function App() {
             setiap pengalaman menawarkan pelajaran berharga, dan saya bersemangat untuk terus berkembang dalam tim yang progresif.
           </p>
           <div className="flex items-center sm:gap-4 gap-2">
-            <a href="/public/assets/CV_Fachri Adryansyah.pdf" download="CV_Fachri Adryansyah.pdf" className="bg violet-700 p-4 rounded-2xl hover:bg-violet-600">
-              Download CV <i className="ri-download-line ri-lg"></i>
+            <a id="download-pdf" onClick={handleDownload}>
+              download PDF{' '}
             </a>
             <a href="#proyek" className="bg zinc-700 p-4 rounded-2xl hover:bg-zinc-600">
               Lihat Proyek <i className="ri-arrow-down-wide-line ri-lg"></i>
